@@ -26,6 +26,8 @@
             font-family: Tohoma, Geneva, sans-serif;
             color: #fff;
             background: url(./img/photo2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             background-size: cover;
             text-align: center;
         }
@@ -33,10 +35,10 @@
             background: rgba(44,62,80,0.7);
             padding: 20px;
             width: 350px;
+            height: 520px;
             margin: auto;
             margin-top: 50px;
-            height: 520px;
-            margin-left: 400px;
+            margin-left: 38%;
         }
 
         .btn-primary {

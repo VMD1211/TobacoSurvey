@@ -24,6 +24,8 @@
             font-family: Tohoma, Geneva, sans-serif;
             color: #fff;
             background: url(./img/photo2.png);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
             background-size: cover;
             text-align: center;
         }
@@ -34,7 +36,7 @@
             margin: auto;
             margin-top: 50px;
             height: 450px;
-            margin-left: 400px;
+            margin-left: 38%;
         }
 
         .btn-primary {
@@ -149,7 +151,7 @@
                 </div>
                 <!-- /.col -->
                 <div class="col-xs-4">
-                    <button type="submit" class="btn btn-primary btn-block btn-flat">Sign In</button>
+                    <button type="submit" class="btn-facebook btn btn-primary btn-block btn-flat">Sign In</button>
                 </div>
                 <!-- /.col -->
             </div>

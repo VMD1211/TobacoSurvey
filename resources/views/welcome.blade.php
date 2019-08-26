@@ -4,7 +4,8 @@
 <head>
     <title>Welcome</title>
     <meta charset="utf-8">
-    <meta name="author" content="pixelhint.com">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content=""/>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
@@ -66,7 +67,7 @@
 
         /*  General CSS*/
         .wrapper{
-            width: 1200px;
+            width: auto;
             height: auto;
             margin: 0 auto;
         }
@@ -170,10 +171,11 @@
 
         /*  Billboard  */
         .billboard{
-            width: 100%;
-            height: 750px;
+            width: auto;
+            height: 100%;
             overflow: hidden;
             position: relative;
+
         }
 
 
@@ -225,10 +227,9 @@
 
 
         /*  Services  */
-        .services,
-        .testimonials{
+        .services{
             padding: 100px 0;
-            background: #fbfbfb;
+            background: #f7ecec;
         }
 
         .services h2{
@@ -254,9 +255,9 @@
         .services ul li{
             float: left;
             display: block;
-            width: 293px;
+            width: 33%;
             height: auto;
-            margin-left: 80px;
+
             text-align: center;
         }
 
@@ -300,243 +301,6 @@
             height: 100%;
             float: left;
         }
-
-
-
-
-        /*  Testimonials  */
-        .testimonials{
-            height: auto;
-            padding-bottom: 100px;
-        }
-
-        .testimonials h3{
-            color: #616161;
-            font-family: 'open_bold', arial;
-            font-size: 26px;
-            font-weight: bold;
-            text-transform: uppercase;
-            text-align: center;
-        }
-
-        .testimonials ul.testi_boxs{
-            list-style: none;
-            overflow: hidden;
-            margin-top: 80px;
-        }
-
-        .testimonials ul.testi_boxs li{
-            float: left;
-            display: block;
-            width: 293px;
-            height: auto;
-            margin-left: 80px;
-        }
-
-        .testimonials ul.testi_boxs img.avatar{
-            border-radius: 100px;
-            -webkit-border-radius: 100px;
-            -moz-border-radius: 100px;
-            -o-border-radius: 100px;
-            margin-bottom: 20px;
-        }
-
-        .testimonials ul.testi_boxs h2{
-            color: #616161;
-            font-family: 'open_bold', arial;
-            font-size: 16px;
-            font-weight: bold;
-            letter-spacing: .5px;
-
-        }
-
-        .testimonials ul.testi_boxs h2 span{
-            color: #756a6a;
-            font-family: 'open_regular', arial;
-            font-weight: normal;
-            font-size: 12px;
-        }
-
-        .testimonials ul.testi_boxs p{
-            color: #747474;
-            font-family: 'open_regular', arial;
-            font-size: 14px;
-            line-height: 22px;
-            margin-top: 20px;
-        }
-
-
-
-
-        /*  Clients  */
-        .clients{
-            width: 100%;
-            height: 120px;
-            background: #f2f1f1;
-        }
-
-        .clients ul{
-            list-style: none;
-        }
-
-        .clients ul li{
-            display: block;
-            float: left;
-            margin-left: 120px;
-        }
-
-        .clients ul li a img{
-            margin-top: 45px;
-            display: inline-block;
-        }
-
-        .clients ul li:first-child{
-            margin-left: 42px;
-        }
-
-
-
-
-
-        /*  Footer  */
-        footer{
-            width: 100%;
-            height: 500px;
-            background: #353535;
-            overflow: hidden;
-            padding-bottom: 20px;
-        }
-
-        footer .cta_footer{
-            background-color: #434343;
-        }
-
-        footer .cta_footer p{
-            color: #ffffff;
-        }
-
-        footer .cta_footer a{
-            background: #e61c42;
-            color: #fff;
-        }
-
-        footer .footer_widget{
-            overflow: hidden;
-            padding-bottom: 40px;
-            margin-bottom: 40px;
-            border-bottom: 1px #434343 solid;
-        }
-
-        footer .f_cols{
-            display: block;
-            width: 270px;
-            height: auto;
-            float: left;
-            margin:100px 40px 0 0;
-        }
-
-        footer .f_cols:last-child{
-            margin-right: 0;
-        }
-
-        footer .f_cols h3{
-            color: #fff;
-            font-family: 'open_regular', arial;
-            font-size: 20px;
-            font-weight: normal;
-            margin-bottom: 40px;
-            letter-spacing: 1px;
-
-        }
-
-        footer .f_cols p{
-            font-family: 'open_regular', arial;
-            font-size: 14px;
-            line-height: 26px;
-            letter-spacing: 1px;
-            color: #ffffff;
-            margin-bottom: 20px;
-        }
-
-        footer .f_cols span.phone{
-            display: block;
-            font-family: 'open_bold', arial;
-            font-weight: bold;
-            color: #ffffff;
-        }
-
-        footer .f_cols ul.sm{
-            list-style: none;
-            overflow: hidden;
-        }
-
-        footer .f_cols ul.sm li{
-            float: left;
-            margin-left: 10px;
-        }
-
-        footer .f_cols ul.sm li:first-child{
-            margin-left: 0;
-        }
-
-        footer .f_cols ul.sm li a{
-            display: block;
-            width: 25px;
-            height: 25px;
-            background: url('../img/social.png') no-repeat;
-        }
-
-        footer .f_cols ul.sm li a.fb{
-            background-position: 0 0;
-        }
-        footer .f_cols ul.sm li a.twitter{
-            background-position: -26px 0;
-        }
-        footer .f_cols ul.sm li a.dribbble{
-            background-position: -52px 0;
-        }
-
-        footer .f_cols ul.sm li a:hover{
-            background: url('../img/social_hover.png') no-repeat;
-        }
-
-        footer .f_cols ul.sm li a.fb:hover{
-            background-position: 0 0;
-        }
-        footer .f_cols ul.sm li a.twitter:hover{
-            background-position: -26px 0;
-        }
-        footer .f_cols ul.sm li a.dribbble:hover{
-            background-position: -52px 0;
-        }
-
-        footer .f_cols a{
-            display: inline-block;
-            font-family: 'open_regular', arial;
-            color: #ffffff;
-        }
-
-        footer .f_cols a:hover{
-            color: #ffffff;
-        }
-
-        footer .f_cols ul li{
-            list-style: none;
-            margin-bottom: 15px;
-        }
-
-        footer .f_cols ul li a{
-            text-decoration: none;
-            color: #ffffff;
-            font-family: 'open_regular', arial;
-            font-family: 14px;
-        }
-
-        footer .f_cols ul li a:hover{
-            color: #e61c42;
-        }
-
-
         p.rights{
             display: block;
             text-align: center;
@@ -666,17 +430,14 @@
 
         <nav>
             <ul>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">Contact</a></li>
+
                 <li class="nav-item dropdown">
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <a href="/login" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
                                 <div class="media-body">
-                                    <h3 class="dropdown-item-title" style="font-family: Tohoma">
+                                    <h3 class="dropdown-item-title" style="font-family: Tahoma">
                                         Login/Register
                                     </h3>
                                 </div>
@@ -699,19 +460,16 @@
 
         <nav>
             <ul>
-                <li><a href="#">Our Story</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Journal</a></li>
-                <li><a href="#">Contact</a></li>
+
                 <li class="nav-item dropdown">
                     <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                         <a href="login" class="dropdown-item">
                             <!-- Message Start -->
                             <div class="media">
                                 <div class="media-body">
-                                    <h3 class="dropdown-item-title" style="font-family: Tohoma">
+                                    <h2 class="dropdown-item-title" style="font-family: Tahoma">
                                         Login/Register
-                                    </h3>
+                                    </h2>
                                 </div>
                             </div>
                             <!-- Message End -->
@@ -726,14 +484,11 @@
 
 </header><!-- End fixed_nav -->
 <section class="billboard">
-    <img src="img/tl_big.jpg" alt="" title=""/>
+    <img src="img/tl_big_1.png" alt="" title=""/>
 </section><!-- End billboard -->
 
 <section class="services wrapper">
-    <h2>WELCOME TO TOBACCO SURVEY</h2>
-    <div class="separator">
-        <img src="img/separator.png" alt=""/>
-    </div>
+
     <ul>
         <li>
             <img class="s_icons" src="img/s1.png" alt=""/>
@@ -755,19 +510,19 @@
 
 <section class="recent_work">
     <div class="work">
-        <a href=""><img src="img/tl_tim3.jpg" alt=""></a>
-    </div>
-    <div class="work">
         <a href=""><img src="img/tl_khoi.jpg" alt=""></a>
     </div>
     <div class="work">
-        <a href=""><img src="img/tl_tim7.jpg" alt=""></a>
+        <a href=""><img src="img/tl_tim3.jpg" alt=""></a>
+    </div>
+    <div class="work">
+        <a href=""><img src="img/tl_tim6.jpg" alt=""></a>
     </div>
     <div class="work">
         <a href=""><img src="img/tl_tim5.jpg" alt=""></a>
     </div>
     <div class="work">
-        <a href=""><img src="img/tl_tim6.jpg" alt=""></a>
+        <a href=""><img src="img/tl_tim1.jpg" alt=""></a>
     </div>
 </section>
 <!-- End recent_work -->
